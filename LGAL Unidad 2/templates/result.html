@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block body%}
+    <h2>{{the_title}}</h2>
+    <p>The values in the equation:</p>
+    <table>
+        <tr>
+            <td>Y:</td>
+            <td>{{the_y}}</td>
+        </tr>
+        <tr>
+            <td colspan="2">area=4*pi*y^2</td>
+        </tr>
+        <tr>
+            <td>area:</td>
+            <td>{{the_result}}</td>
+        </tr>
+    </table>
+    <p><a href="/entry">Go back</a></p>
+{% endblock%}
